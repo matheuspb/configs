@@ -1,0 +1,7 @@
+[user]
+	name = Matheus Bittencourt
+	email = matheuspb2005@hotmail.com
+[push]
+	default = simple
+[core]
+	editor = vim
