@@ -8,11 +8,10 @@ alias ll='ls -l'
 alias la='ls -A'
 alias lla='ls -lA'
 
-function mycd () { cd $1 && ls; }
-alias cd=mycd
+function cs () { cd "$@" && ls; }
 
 alias bye='sudo shutdown 0'
 
 # prompt
-PS1='[\u:\W]\$ '
+PS1='[\u:\W]$ '
 
