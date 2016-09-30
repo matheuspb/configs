@@ -15,5 +15,5 @@ function branch () { echo $(__git_ps1); }
 alias bye='sudo shutdown 0'
 
 # prompt
-PS1='[\u : \W]$ '
+PS1='\W$(__git_ps1) $ '
 
