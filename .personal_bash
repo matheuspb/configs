@@ -2,15 +2,16 @@
 # put the lines below in ~/.bashrc
 #
 # if [ -f ~/.personal_bash.sh ]; then
-#     . ~/.personal_bash.sh
+#     . ~/.personal_bash
 # fi
 
 alias ll='ls -l'
 alias la='ls -A'
 alias lla='ls -lA'
 
+alias mv='mv -i' # prompt if overwriting
+
 function cs () { cd "$@" && ls; }
-function branch () { echo $(__git_ps1); }
 
 alias bye='sudo shutdown 0'
 
