@@ -21,27 +21,7 @@ filetype plugin indent on " required
 
 syntax on
 set autoindent tabstop=4 shiftwidth=4
-
-set noexpandtab " Use tab as default
-
-function TabsOrSpaces()
-	" Determines whether to use spaces or tabs on the current buffer.
-	if getfsize(bufname("%")) > 256000
-		" File is very large, just use the default.
-		return
-	endif
-
-	let numTabs=len(filter(getbufline(bufname("%"), 1, "$"), 'v:val =~ "^\\t"'))
-	let numSpaces=len(filter(getbufline(bufname("%"), 1, "$"), 'v:val =~ "^ "'))
-
-	if numTabs < numSpaces
-		setlocal expandtab
-	endif
-endfunction
-
-" Call the function after opening a buffer
-autocmd BufReadPost * call TabsOrSpaces()
-
+set noexpandtab " Tab
 set cursorline " Highlights current line
 set colorcolumn=81 " Ruler
 
