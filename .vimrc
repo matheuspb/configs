@@ -11,7 +11,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive' " Git wrapper
-Plugin 'romainl/Apprentice' " Color scheme
+Plugin 'jpo/vim-railscasts-theme' " Color scheme
 Plugin 'editorconfig/editorconfig-vim'
 
 " All of your Plugins must be added before the following line
@@ -31,10 +31,10 @@ set clipboard=unnamedplus " requires vim-gnome or vim-gtk to enable clipboard
 imap {<CR> {<CR>}<left><CR><up><Tab>
 
 set t_Co=256
-colorscheme apprentice
+colorscheme railscasts
 
 set laststatus=2 " Show airline
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'luna'
+let g:airline_theme = 'ubaryd'
 let g:airline#extensions#tabline#enabled = 1 " Enables airline tabline
 

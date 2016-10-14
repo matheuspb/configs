@@ -1,7 +1,7 @@
 #!/bin/sh
 #
-# Put this file on home folder and
-# put the lines below in ~/.bashrc
+#   Put this file on home folder or link with 'ln',
+# and put the lines below in ~/.bashrc
 #
 # if [ -f ~/.personal_bash ]; then
 #     . ~/.personal_bash
