@@ -13,6 +13,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive' " Git wrapper
 Plugin 'jpo/vim-railscasts-theme' " Color scheme
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'ervandew/supertab' "Auto completes with <tab>
 
 " All of your Plugins must be added before the following line
 call vundle#end()         " required
