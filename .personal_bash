@@ -22,4 +22,4 @@ alias mount-data='sudo mount -t auto -v /dev/sda6 /media/matheus/Data/'
 function cs () { cd "$@" && ls; }
 
 PS1='\W$(__git_ps1) $ ' # prompt
-
+PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
