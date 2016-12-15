@@ -1,16 +1,25 @@
 set $mod Mod1
 
 # wallpaper
-exec --no-startup-id feh --bg-scale ~/Pictures/wallpaper.jpg
+exec --no-startup-id feh --bg-scale ~/.wallpaper
 
 font pango:monospace 8
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-bindsym $mod+Return exec terminator
+bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec dmenu_run
+
+# Brightness
+bindsym $mod+x exec --no-startup-id xbacklight -inc 10
+bindsym $mod+z exec --no-startup-id xbacklight -dec 10
+
+# Volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q sset Master 5%+
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q sset Master 5%-
+bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
 
 # change focus
 bindsym $mod+h focus left
