@@ -6,11 +6,12 @@ alias lla "ls -lA"
 
 alias mv "mv -i"
 alias cp "cp -i"
-alias xflux "xflux -l -27.6 -g -48.5"
 
-alias bye "shutdown 0"
 alias usage "du -bsh"
 alias mount-data "sudo mount -t auto -v /dev/sda6 /media/matheus/Data/"
+
+# sudo !!
+alias fuck "sudo $history[1]"
 
 function cs
 	cd $argv; and ls
