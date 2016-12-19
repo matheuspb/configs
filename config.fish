@@ -11,7 +11,9 @@ alias usage "du -bsh"
 alias mount-data "sudo mount -t auto -v /dev/sda6 /media/matheus/Data/"
 
 # sudo !!
-alias fuck "sudo $history[1]"
+function fuck
+	eval sudo $history[1];
+end
 
 function cs
 	cd $argv; and ls
