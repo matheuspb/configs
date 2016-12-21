@@ -1,6 +1,6 @@
-URxvt.background:      Black
-URxvt.foreground:      White
-URxvt.font:            xft:monospace:size=10
-URxvt.cursorBlink:     true
-URxvt.cursorUnderline: true
-URxvt.scrollBar:       false
+*background:       Black
+*foreground:       White
+*font:             xft:monospace:size=10
+*cursorBlink:      true
+*cursorUnderline:  true
+*scrollBar:        false

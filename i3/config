@@ -21,6 +21,16 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q sset Master 5%+
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q sset Master 5%-
 bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
 
+# print screen commands
+set $print_screen     "scrot -ze  'mv $f ~/Pictures/screenshots'"
+set $print_selection  "scrot -zse 'mv $f ~/Pictures/screenshots'"
+set $print_window     "scrot -zue 'mv $f ~/Pictures/screenshots'"
+
+# print screen bindings
+bindsym --release Print        exec --no-startup-id $print_screen
+bindsym --release Shift+Print  exec --no-startup-id $print_selection
+bindsym --release $mod+p       exec --no-startup-id $print_window
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -87,8 +97,10 @@ bindsym $mod+Shift+0 move container to workspace 10
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
+
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
 # suspend
 bindsym $mod+Shift+s exec --no-startup-id i3lock && systemctl suspend
 
