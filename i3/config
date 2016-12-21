@@ -66,8 +66,8 @@ bindsym $mod+Shift+space floating toggle
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
-# focus the parent container
 bindsym $mod+a focus parent
+bindsym $mod+s focus child
 
 # switch to workspace
 bindsym $mod+1 workspace 1
@@ -102,7 +102,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # suspend
-bindsym $mod+Shift+s exec --no-startup-id i3lock && systemctl suspend
+bindsym $mod+Shift+s exec --no-startup-id i3lock -c 000000 && systemctl suspend
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
