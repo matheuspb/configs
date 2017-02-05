@@ -4,8 +4,9 @@ alias ll "ls -l"
 alias la "ls -A"
 alias lla "ls -lA"
 
-alias mv "mv -i"
-alias cp "cp -i"
+alias mv "mv -iv"
+alias cp "cp -iv"
+alias rm "rm -Iv --one-file-system"
 
 alias usage "du -bsh"
 alias mount-data "sudo mount -t auto -v /dev/sda6 /media/matheus/Data/"
