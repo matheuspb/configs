@@ -22,9 +22,9 @@ bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q sset Master 5%-
 bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
 
 # print screen commands
-set $print_screen     "scrot -ze  'mv $f ~/Pictures/screenshots'"
-set $print_selection  "scrot -zse 'mv $f ~/Pictures/screenshots'"
-set $print_window     "scrot -zue 'mv $f ~/Pictures/screenshots'"
+set $print_screen     "scrot -ze  'mv $f ~/Pictures/screenshots/'"
+set $print_selection  "scrot -zse 'mv $f ~/Pictures/screenshots/'"
+set $print_window     "scrot -zue 'mv $f ~/Pictures/screenshots/'"
 
 # print screen bindings
 bindsym --release Print        exec --no-startup-id $print_screen
