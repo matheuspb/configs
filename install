@@ -1,0 +1,5 @@
+#!/bin/sh
+
+ln -f config.fish ~/.config/fish/
+ln -f .{Xdefaults,vimrc} ~
+ln -f i3/config ~/.config/i3/
