@@ -1,5 +1,8 @@
 set $mod Mod1
 
+exec --no-startup-id xrdb -load ~/.Xresources
+exec --no-startup-id urxvtd -q -o -f
+
 exec --no-startup-id dropbox
 exec --no-startup-id xflux -l -27.6 -g -48.5 -k 2700
 
@@ -8,7 +11,7 @@ exec --no-startup-id feh --bg-scale ~/.wallpaper
 
 font pango:monospace 8
 
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec urxvtc
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec dmenu_run
 
