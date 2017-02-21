@@ -1,0 +1,7 @@
+#!/bin/sh
+# thx @zambonin
+
+TMPBG='/tmp/lock-screen'
+scrot "$TMPBG"
+convert "$TMPBG" -blur 0x5 "$TMPBG"
+i3lock -i "$TMPBG"
