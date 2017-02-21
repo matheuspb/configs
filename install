@@ -8,3 +8,4 @@ ln -f config.fish ~/.config/fish/
 
 ln -f i3/config ~/.config/i3/
 ln -f i3/lock ~/.config/i3/
+ln -f i3/status ~/.i3status.conf

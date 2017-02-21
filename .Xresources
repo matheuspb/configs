@@ -1,6 +1,6 @@
 ! run xrdb -load .Xdefaults for the colors to work
 
-*.font:             xft:monospace:size=10
+*.font:             xft:Droid\ Sans\ Mono:size=10
 *.cursorBlink:      true
 *.cursorUnderline:  true
 *.scrollBar:        false

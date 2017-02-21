@@ -9,7 +9,7 @@ exec --no-startup-id xflux -l -27.6 -g -48.5 -k 2700
 # wallpaper
 exec --no-startup-id feh --bg-scale ~/.wallpaper
 
-font pango:monospace 8
+font pango:Droid Sans Mono 8
 
 bindsym $mod+Return exec urxvtc
 bindsym $mod+Shift+q kill
