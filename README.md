@@ -7,5 +7,5 @@ This repository includes my configuration files for
 * [fish](config.fish)
 
 To use all of them, simply run `./install`. Vim configs depend on
-[Vundle](https://github.com/VundleVim/Vundle.vim), and the lock script uses
-[imagemagick](https://www.imagemagick.org).
+[Vundle](https://github.com/VundleVim/Vundle.vim), and the lock screen script
+uses [imagemagick](https://www.imagemagick.org).
