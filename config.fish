@@ -7,7 +7,6 @@ export EDITOR=vim
 alias ll  "ls -l"
 alias la  "ls -A"
 alias lla "ls -lA"
-alias lsd "ls -l | grep '^d'"
 
 alias mv "mv -iv"
 alias cp "cp -iv"
@@ -35,4 +34,8 @@ function dig
 	else
 		echo "No arguments"
 	end
+end
+
+function obg
+	fish -c "$argv &"
 end
