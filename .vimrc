@@ -13,12 +13,10 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Plugins installed and managed by Vundle:
-Plugin 'vim-airline/vim-airline'         " Fancy status bar
-Plugin 'vim-airline/vim-airline-themes'  " Themes for fancy status bar
-Plugin 'tpope/vim-fugitive'              " Git wrapper
-Plugin 'jpo/vim-railscasts-theme'        " Color scheme
-Plugin 'editorconfig/editorconfig-vim'   " See http://editorconfig.org/
-Plugin 'ervandew/supertab'               " Auto completes with <tab>
+Plugin 'itchyny/lightline.vim'          " Status line
+Plugin 'jpo/vim-railscasts-theme'       " Color scheme
+Plugin 'editorconfig/editorconfig-vim'  " See http://editorconfig.org/
+Plugin 'ervandew/supertab'              " Auto completes with <tab>
 
 " All of your Plugins must be added before the following line
 call vundle#end()         " required
@@ -41,7 +39,5 @@ imap {<CR> {<CR>}<left><CR><up><Tab>
 set t_Co=256
 colorscheme railscasts
 
-set laststatus=2 " Show airline
-let g:airline_powerline_fonts = 1
-let g:airline_theme = 'ubaryd'
-let g:airline#extensions#tabline#enabled = 1 " Enables airline tabline
+set laststatus=2  " lightline
+let g:lightline = { 'colorscheme': 'seoul256', }
