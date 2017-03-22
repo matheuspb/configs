@@ -2,7 +2,7 @@
 
 ln -f .vimrc ~/
 ln -f .Xresources ~/
-xrdb -load ~/.Xresources
+xrdb -merge ~/.Xresources
 
 ln -f config.fish ~/.config/fish/
 
