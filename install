@@ -5,6 +5,7 @@ ln -f .Xresources ~/
 xrdb -merge ~/.Xresources
 
 ln -f config.fish ~/.config/fish/
+ln -f .zshrc ~/
 
 ln -f i3/config ~/.config/i3/
 ln -f i3/lock ~/.config/i3/
