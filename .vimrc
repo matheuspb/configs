@@ -40,4 +40,3 @@ set t_Co=256
 colorscheme railscasts
 
 set laststatus=2  " lightline
-let g:lightline = { 'colorscheme': 'seoul256', }

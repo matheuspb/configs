@@ -1,4 +1,4 @@
-! run xrdb -load .Xresources for the colors to work
+! run 'xrdb -load .Xresources' for the colors to work
 
 *.font:             xft:Droid Sans Mono:size=10
 *.cursorBlink:      true
