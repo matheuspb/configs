@@ -30,6 +30,7 @@ set tabstop=4 shiftwidth=4  " Tab character and indent size = 4 spaces
 set noexpandtab             " <Tab> inserts tab character
 set cursorline              " Highlights current line
 set colorcolumn=81          " Ruler
+set mouse=a                 " Enables mouse interaction
 
 " Sets default register to system clipboard (requires 'gvim' package)
 set clipboard=unnamedplus

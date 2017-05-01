@@ -8,6 +8,9 @@ zstyle :compinstall filename '/home/matheus/.zshrc'
 autoload -Uz compinit
 compinit
 
+source\
+	/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 export PROMPT="%1~ %# "
 export CC=clang
 export CXX=clang++
@@ -29,6 +32,5 @@ alias mount-data="sudo mount -t auto -v /dev/sda6 /media/matheus/Data/"
 alias spm="sudo pacman"
 
 function cs() {
-	emulate -L zsh
 	cd $@ && ls
 }
