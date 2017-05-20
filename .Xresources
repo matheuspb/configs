@@ -1,6 +1,6 @@
 ! run 'xrdb -load .Xresources' for the colors to work
 
-*.font:             xft:Droid Sans Mono:size=10
+*.font:             xft:Droid Sans Mono:pixelsize=13:slant=0:weight=100
 *.cursorBlink:      true
 *.cursorUnderline:  true
 *.scrollBar:        false
