@@ -5,6 +5,7 @@ exec --no-startup-id urxvtd -q -o -f
 exec --no-startup-id dropbox
 exec --no-startup-id xflux -l -27.6 -g -48.5 -k 2700
 exec --no-startup-id feh --bg-fill ~/.wallpaper
+exec --no-startup-id compton -b
 
 font pango:Droid Sans Mono 9
 new_window pixel 1
