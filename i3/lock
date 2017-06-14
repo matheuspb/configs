@@ -3,5 +3,5 @@
 
 TMPBG='/tmp/lock-screen.png'
 scrot "$TMPBG"
-convert "$TMPBG" -blur 0x5 "$TMPBG"
+convert "$TMPBG" -scale 50% -blur 0x5 -scale 200% "$TMPBG"
 i3lock -i "$TMPBG"
