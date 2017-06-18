@@ -18,6 +18,7 @@ Plugin 'vim-airline/vim-airline-themes'  " Themes for status bar
 Plugin 'jpo/vim-railscasts-theme'        " Color scheme
 Plugin 'editorconfig/editorconfig-vim'   " See http://editorconfig.org/
 Plugin 'ervandew/supertab'               " Auto completes with <tab>
+Plugin 'scrooloose/nerdtree'             " Shows folder tree
 
 " All of your Plugins must be added before the following line
 call vundle#end()         " required
@@ -37,6 +38,11 @@ set clipboard=unnamedplus
 
 " Auto closes brackets
 imap {<CR> {<CR>}<left><CR><up><Tab>
+
+nmap j gj
+nmap k gk
+
+map <C-n> :NERDTreeToggle<CR>
 
 set t_Co=256
 colorscheme railscasts
