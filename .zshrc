@@ -27,11 +27,13 @@ alias rm="rm -Iv --one-file-system"
 
 alias vim="vim -p"
 
+alias grep="grep --color"
+
 alias usage="du -bsh"
 alias mount-data="sudo mount -t auto -v /dev/sda6 /media/matheus/Data/"
 alias spm="sudo pacman"
 
-alias update="sh <(curl -Ls git.io/vH7Ya)"
+alias update="sh ~/.update.sh"
 
 function cs() {
 	cd $@ && ls
