@@ -26,8 +26,8 @@ alias cp="cp -iv"
 alias rm="rm -Iv --one-file-system"
 
 alias vim="vim -p"
-
 alias grep="grep --color"
+alias psg="ps -e | grep"
 
 alias usage="du -bsh"
 alias mount-data="sudo mount -t auto -v /dev/sda6 /media/matheus/Data/"
