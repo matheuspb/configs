@@ -1,6 +1,6 @@
 #!/bin/sh
 
-BACKUPDIR=~/Dropbox/backup-jack
+BACKUPDIR=~/Dropbox/backup-hal
 
 sudo pacman -Syu  # updates packages
 yaourt -Su --aur  # updates AUR packages

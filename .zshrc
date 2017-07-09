@@ -3,7 +3,7 @@ HISTSIZE=1000
 SAVEHIST=1000
 bindkey -v
 
-zstyle :compinstall filename '/home/matheus/.zshrc'
+zstyle :compinstall filename '~/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -30,7 +30,6 @@ alias grep="grep --color"
 alias psg="ps -e | grep"
 
 alias usage="du -bsh"
-alias mount-data="sudo mount -t auto -v /dev/sda6 /media/matheus/Data/"
 alias spm="sudo pacman"
 
 alias update="sh ~/.update.sh"
