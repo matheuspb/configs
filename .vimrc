@@ -32,7 +32,7 @@ set noexpandtab             " <Tab> inserts tab character
 set cursorline              " Highlights current line
 set colorcolumn=81          " Ruler
 set mouse=a                 " Enables mouse interaction
-set spelllang=pt_br         " Spell check language
+set spelllang=pt_br,en_us   " Spell check language
 
 " Sets default register to system clipboard (requires 'gvim' package)
 set clipboard=unnamedplus
@@ -44,7 +44,7 @@ nmap j gj
 nmap k gk
 
 map <C-n> :NERDTreeToggle<CR>
-map <F8>  :set spell! spell?<CR> " Toggle spell checking
+map <F8>  :set spell!<CR>
 
 set t_Co=256
 colorscheme railscasts
