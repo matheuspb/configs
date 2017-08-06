@@ -34,6 +34,8 @@ alias spm="sudo pacman"
 
 alias update="sh ~/.update.sh"
 
+alias vim-plugins="pacman -Qg vim-plugins | sed -e 's/vim-plugins //'"
+
 function cs() {
 	cd $@ && ls
 }
