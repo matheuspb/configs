@@ -1,6 +1,6 @@
 #!/bin/sh
 
-BACKUPDIR=~/Dropbox/backup-hal
+BACKUPDIR=~/Dropbox/backup-"$HOSTNAME"
 
 sudo pacman -Syu --noconfirm  # updates packages
 yaourt -Su --aur --noconfirm  # updates AUR packages
