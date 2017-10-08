@@ -6,6 +6,8 @@ set colorcolumn=81          " Ruler
 set mouse=a                 " Enables mouse interaction
 set spelllang=pt_br,en_us   " Spell check language
 
+autocmd FileType python set expandtab
+
 " Sets default register to system clipboard (requires 'gvim' package)
 set clipboard=unnamedplus
 
