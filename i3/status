@@ -12,8 +12,6 @@ general {
 }
 
 order += "disk /"
-order += "run_watch DHCP"
-order += "path_exists VPN"
 order += "wireless wlp3s0"
 order += "ethernet enp2s0"
 order += "volume master"
@@ -47,15 +45,6 @@ battery 0 {
 	status_full = "FULL"
 	path = "/sys/class/power_supply/BAT%d/uevent"
 	low_threshold = 10
-}
-
-run_watch DHCP {
-	pidfile = "/var/run/dhcpcd*.pid"
-}
-
-path_exists VPN {
-	# path exists when a VPN tunnel launched by nmcli/nm-applet is active
-	path = "/proc/sys/net/ipv4/conf/tun0"
 }
 
 tztime local {
