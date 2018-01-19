@@ -1,4 +1,4 @@
-set $mod Mod1
+set $mod Mod4
 
 exec --no-startup-id xrdb -load ~/.Xresources
 exec --no-startup-id urxvtd -q -o -f
