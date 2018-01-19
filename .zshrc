@@ -36,7 +36,7 @@ alias update="sh ~/.update.sh"
 alias pipup="pip list --outdated --format=freeze | cut -d = -f 1 |\
 	sudo xargs -n1 pip install -U"
 
-alias vim-plugins="pacman -Qg vim-plugins | sed -e 's/vim-plugins //'"
+alias vim-plugins="pacman -Qg vim-plugins | cut -d' ' -f2"
 
 function cs() {
 	cd $@ && ls
