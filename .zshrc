@@ -27,10 +27,11 @@ alias rm="rm -Iv --one-file-system"
 
 alias vim="vim -p"
 alias grep="grep --color"
-alias psg="ps -e | grep"
+alias pacman="pacman --color auto"
 
+alias spm="sudo pacman --color auto"
+alias psg="ps -e | grep"
 alias usage="du -bsh"
-alias spm="sudo pacman"
 
 alias update="sh ~/.update.sh"
 alias pipup="pip list --outdated --format=freeze | cut -d = -f 1 |\
