@@ -36,6 +36,7 @@ alias usage="du -bsh"
 alias update="sh ~/.update.sh"
 alias pipup="pip list --outdated --format=freeze | cut -d = -f 1 |\
 	sudo xargs -n1 pip install -U"
+alias formatcpp="clang-format --style=file -i **/*.{h,cpp}"
 
 alias vim-plugins="pacman -Qg vim-plugins | cut -d' ' -f2"
 
