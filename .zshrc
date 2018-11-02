@@ -11,6 +11,8 @@ compinit
 source\
 	/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+export DUMP=~/Dropbox/dump
+
 export PROMPT="%1~ %# "
 export CC=clang
 export CXX=clang++
@@ -42,4 +44,8 @@ alias vim-plugins="pacman -Qg vim-plugins | cut -d' ' -f2"
 
 function cs() {
 	cd $@ && ls
+}
+
+function dump() {
+	mv $1 $DUMP
 }
