@@ -9,8 +9,6 @@ xrdb -load ~/.Xresources
 ln -f i3/config  ~/.config/i3/
 ln -f i3/status  ~/.i3status.conf
 
-ln -f update.sh  ~/.update.sh
-
 if [ "$1" == "--vim" ]; then
 	sudo pacman -S $(< vim-plugins)
 fi

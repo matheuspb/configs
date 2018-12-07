@@ -30,17 +30,13 @@ alias rm="rm -Iv --one-file-system"
 alias vim="vim -p"
 alias grep="grep --color"
 alias pacman="pacman --color auto"
+alias yay="yay --color auto"
 
-alias spm="sudo pacman --color auto"
 alias psg="ps -e | grep"
 alias usage="du -bsh"
-
-alias update="sh ~/.update.sh"
 alias pipup="pip list --outdated --format=freeze | cut -d = -f 1 |\
 	sudo xargs -n1 pip install -U"
 alias formatcpp="clang-format --style=file -i **/*.{h,cpp}"
-
-alias vim-plugins="pacman -Qg vim-plugins | cut -d' ' -f2"
 
 function cs() {
 	cd $@ && ls
