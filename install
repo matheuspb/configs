@@ -1,9 +1,11 @@
 #!/bin/sh
 
 ln -f .zshrc       ~/
+ln -f .zprofile    ~/
 ln -f .vimrc       ~/
 ln -f .gitconfig   ~/
 ln -f .Xresources  ~/
+ln -f .xinitrc     ~/
 xrdb -load ~/.Xresources
 
 ln -f i3/config  ~/.config/i3/
