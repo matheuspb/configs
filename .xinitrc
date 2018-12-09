@@ -1,4 +1,6 @@
 #!/bin/sh
+#
+# Based on example in /etc/X11/xinit/xinitrc
 
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
@@ -24,7 +26,6 @@ if [ -f "$usermodmap" ]; then
 fi
 
 # start some nice programs
-
 if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 	for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
 		[ -x "$f" ] && . "$f"
@@ -32,4 +33,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 	unset f
 fi
 
+urxvtd -q -o -f &
+xflux -l -27.6 -g -48.5 -k 2700 &
+feh --bg-fill ~/.wallpaper &
 exec i3
