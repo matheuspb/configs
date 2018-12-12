@@ -21,9 +21,9 @@ bindsym XF86AudioMute exec --no-startup-id \
 	pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 # print screen commands
-set $print_screen     "scrot -ze  'mv $f ~/Pictures/screenshots/'"
-set $print_selection  "scrot -zse 'mv $f ~/Pictures/screenshots/'"
-set $print_window     "scrot -zue 'mv $f ~/Pictures/screenshots/'"
+set $print_screen     "scrot -ze  'mv $f ~/pictures/screenshots/'"
+set $print_selection  "scrot -zse 'mv $f ~/pictures/screenshots/'"
+set $print_window     "scrot -zue 'mv $f ~/pictures/screenshots/'"
 
 # print screen bindings
 bindsym --release Print        exec --no-startup-id $print_screen
