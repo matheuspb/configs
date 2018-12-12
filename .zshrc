@@ -11,8 +11,6 @@ compinit
 source\
 	/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-export DUMP=~/Dropbox/dump
-
 export PROMPT="%1~ %# "
 export CC=clang
 export CXX=clang++
@@ -40,8 +38,4 @@ alias formatcpp="clang-format --style=file -i **/*.{h,cpp}"
 
 function cs() {
 	cd $@ && ls
-}
-
-function dump() {
-	mv $1 $DUMP
 }
