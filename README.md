@@ -2,6 +2,7 @@
 
 This repository includes my configuration files for
 * [zsh](.zshrc)
+* [tmux](.tmux.conf)
 * [vim](.vimrc)
 * [git](.gitconfig)
 * [urxvt](.Xresources)

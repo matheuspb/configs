@@ -39,3 +39,7 @@ alias formatcpp="clang-format --style=file -i **/*.{h,cpp}"
 function cs() {
 	cd $@ && ls
 }
+
+if [[ -z "$TMUX" ]]; then
+	exec tmux
+fi
