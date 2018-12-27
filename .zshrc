@@ -40,6 +40,20 @@ function cs() {
 	cd $@ && ls
 }
 
+function vm() {
+	qemu-system-x86_64 \
+		-m 2G \
+		-cpu host,hv_relaxed,hv_spinlocks=0x1fff,hv_vapic,hv_time \
+		-smp 2 \
+		-machine type=pc,accel=kvm \
+		-vga std \
+		-net nic \
+		-net user,smb="$HOME" \
+		-usb -device usb-tablet \
+		-monitor stdio \
+		-drive file="$1",format=raw,aio=native,cache=none
+}
+
 if [[ -z "$TMUX" ]]; then
 	exec tmux
 fi
