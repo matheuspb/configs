@@ -1,6 +1,6 @@
-# configs
+# dotfiles
 
-This repository includes my configuration files for
+This repository includes my dotfiles for
 * [zsh](.zshrc)
 * [tmux](.tmux.conf)
 * [vim](.vimrc)
