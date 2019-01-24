@@ -55,5 +55,5 @@ function vm() {
 }
 
 if [[ -z "$TMUX" ]]; then
-	exec tmux
+	exec tmux new-session -A -s main
 fi
