@@ -35,5 +35,4 @@ fi
 
 urxvtd -q -o -f &
 feh --bg-fill ~/.wallpaper &
-compton -b --sw-opti &
 exec i3
