@@ -17,9 +17,9 @@ export CXX=clang++
 export EDITOR=vim
 
 alias ls="ls --color=auto"
-alias ll="ls -l"
+alias ll="ls -lh"
 alias la="ls -A"
-alias lla="ls -lA"
+alias lla="ls -lhA"
 
 alias mv="mv -iv"
 alias cp="cp -iv"
