@@ -43,7 +43,7 @@ function cs() {
 
 function vm() {
 	qemu-system-x86_64 \
-		-m 2G \
+		-m 3G \
 		-cpu host,hv_relaxed,hv_spinlocks=0x1fff,hv_vapic,hv_time \
 		-smp 2 \
 		-machine type=pc,accel=kvm \
