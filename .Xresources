@@ -5,6 +5,9 @@
 *.cursorUnderline:  true
 *.scrollBar:        false
 
+*.transparent: true
+*.shading: 20
+
 ! Base16 Railscasts
 ! Scheme: Ryan Bates (http://railscasts.com)
 
