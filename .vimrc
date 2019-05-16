@@ -7,6 +7,7 @@ set mouse=a                 " Enables mouse interaction
 set spelllang=pt_br,en_us   " Spell check language
 
 autocmd FileType python set expandtab
+autocmd FileType tex set makeprg=make\ %<.pdf
 
 " Sets default register to system clipboard (requires 'gvim' package)
 set clipboard=unnamedplus
@@ -29,6 +30,7 @@ nmap H gT
 
 nmap <C-n> :NERDTreeToggle<CR>
 nmap <F8>  :set spell!<CR>
+map  <F5>  <ESC>:update | make!<CR>
 
 set t_Co=256
 colorscheme desert
