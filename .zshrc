@@ -33,7 +33,7 @@ alias yay="yay --color auto"
 alias psg="ps -e | grep"
 alias usage="du -bsh"
 alias pipup="pip list --outdated --format=freeze | cut -d = -f 1 |\
-	sudo xargs -n1 pip install -U"
+	xargs -n1 pip install -U"
 alias formatc="find . -type f -regex '.*\.\(c\|cpp\|h\)' -exec sh -c \
 	'clang-format --style=file -i {} &' \;"
 
