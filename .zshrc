@@ -12,8 +12,6 @@ source\
 	/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export PROMPT="%1~ %# "
-export CC=clang
-export CXX=clang++
 export EDITOR=vim
 
 alias ls="ls --color=auto"
