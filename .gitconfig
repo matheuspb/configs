@@ -1,7 +1,6 @@
 [user]
 	name = Matheus Bittencourt
 	email = bittencourt.matheus@gmail.com
-	signingkey = D84870658D9AA66A
 [pull]
 	ff = only
 [push]
