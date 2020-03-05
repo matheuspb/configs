@@ -2,7 +2,6 @@
 
 This repository includes my dotfiles for
 * [zsh](.zshrc)
-* [tmux](.tmux.conf)
 * [vim](.vimrc)
 * [git](.gitconfig)
 * [urxvt](.Xresources)

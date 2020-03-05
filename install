@@ -2,7 +2,6 @@
 
 ln -f .zshrc       ~/
 ln -f .zprofile    ~/
-ln -f .tmux.conf   ~/
 ln -f .vimrc       ~/
 ln -f .gitconfig   ~/
 ln -f .Xresources  ~/

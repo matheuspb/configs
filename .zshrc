@@ -54,7 +54,3 @@ function vm() {
 		-monitor stdio \
 		-drive file="$1",format=raw,aio=native,cache=none
 }
-
-if [[ $DISPLAY && -z "$TMUX" ]]; then
-	exec tmux new-session -A -s main
-fi
