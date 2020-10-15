@@ -5,8 +5,11 @@
 *.cursorUnderline:  true
 *.scrollBar:        false
 
-*.transparent: true
-*.shading: 20
+*.transparent:  true
+*.shading:      20
+ 
+URxvt.perl-ext-common:     clipboard
+URxvt.clipboard.autocopy:  true
 
 ! Base16 Railscasts
 ! Scheme: Ryan Bates (http://railscasts.com)
